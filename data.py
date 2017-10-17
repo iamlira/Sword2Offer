@@ -15,6 +15,8 @@ def normalization(property):
     pass
 
 
-print(property)
+tmp=(property-property.mean())/(property.max()-property.min())
+print(tmp)
+#print(property)
 #property.apply(lambda x:(x-np.average(x))/(np.max(x)-np.min(x)))
 #print(normalization(property))
