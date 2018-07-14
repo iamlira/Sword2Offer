@@ -16,17 +16,4 @@ public class Solution {
         return left>right?left+1:right+1;//返回较大值+1
     }
 
-    public static void main(String[] args) {
-        Solution solu=new Solution();
-        TreeNode root=new TreeNode(1);
-        TreeNode t1=new TreeNode(2);
-        TreeNode t2=new TreeNode(3);
-        TreeNode t3=new TreeNode(4);
-        TreeNode t4=new TreeNode(5);
-        root.left=t1;
-        root.right=t2;
-        t1.left=t3;
-        t3.left=t4;
-        System.out.println(solu.TreeDepth(null));
-    }
 }
