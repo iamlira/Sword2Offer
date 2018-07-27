@@ -7,7 +7,8 @@ public class Sort {
         int[] test={2,3,5,1,5,6,3,3,56,76};
         //s.MergeSort(test,0,test.length-1);
         //s.HeapSort(test);
-        s.QuickSort(test,0,test.length-1);
+        //s.QuickSort(test,0,test.length-1);
+        s.ShellSort(test);
         for(int i=0;i<test.length;i++){
             System.out.println(test[i]);
         }
@@ -99,4 +100,22 @@ public class Sort {
         QuickSort(a,i+1,right);
     }
     //======quick=====
+
+    //======shell=====
+    public void ShellSort(int[] a){
+        for(int gap=a.length/2;gap>0;gap/=2){
+            for(int i=gap;i<a.length;i++){
+                int j=i;
+                int tmp=a[j];
+                if(a[j]<a[j-gap]) {
+                    while(j-gap>=0&&tmp<a[j-gap]){
+                        a[j]=a[j-gap];
+                        j-=gap;
+                    }
+                    a[j]=tmp;
+                }
+            }
+        }
+    }
+    //======shell=====
 }
