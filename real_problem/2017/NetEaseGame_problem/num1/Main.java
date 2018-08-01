@@ -1,3 +1,17 @@
+/*
+输入例子1:
+
+2
+19:90:23
+23:59:59
+
+
+输出例子1:
+
+19:00:23
+23:59:59
+*/
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
