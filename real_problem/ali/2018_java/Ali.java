@@ -35,7 +35,7 @@ public class Ali {
 		for(int i=0;i<n;i++){
 			dis[n][i]=x[i]+y[i];
 		}
-		search(arr,dis,0);
+		search(arr,dis,0);//对遍历的点进行全排列每次算出距离值，得到最小值
 		System.out.println(min);
 	}
 	public static void search(int[] arr,int[][] dis,int index){
